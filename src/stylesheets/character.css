@@ -1,0 +1,34 @@
+* {
+  font-family: "Chilanka", cursive;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.character-card {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 30px;
+  margin: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 5px greenyellow;
+  margin-bottom: 20px;
+}
+.character-card:hover {
+  transform: scale(1.05);
+}
+.character-main-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.character-name {
+  background-color: white;
+  margin-left: 30px;
+}
+.character-species {
+  background-color: white;
+  margin-left: 30px;
+}

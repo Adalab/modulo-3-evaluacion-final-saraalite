@@ -1,0 +1,93 @@
+.character-detail-card {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px greenyellow;
+}
+.character-image {
+  background-color: white;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.detail-gender-container {
+  background-color: white;
+  margin-left: 20px;
+}
+.detail-name-container {
+  background-color: white;
+  margin-left: 20px;
+}
+.detail-origin-container {
+  background-color: white;
+  margin-left: 20px;
+}
+.detail-episodes-container {
+  background-color: white;
+  margin-left: 20px;
+}
+.detail-species-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.detail-status-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.detail-icon-status {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.detail-icon-species {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: 5px;
+}
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.back-home {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  box-shadow: 3px 3px 3px greenyellow;
+  /*   transition: color ease 1s; */
+  font-weight: 800;
+}
+.back-home:hover {
+  /*   color: greenyellow; */
+  transform: scale(1.1);
+}
+.back-home-container {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  text-align: center;
+}
+.back-home-container:hover {
+  transform: scale(1.1);
+}
+.error-general {
+  color: white;
+}

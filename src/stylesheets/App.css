@@ -1,0 +1,37 @@
+* {
+  background-color: black;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.input {
+  background-color: white;
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 1px greenyellow;
+  padding: 10px;
+}
+.not-found {
+  color: white;
+}
+.error-general-image {
+  width: 250px;
+  height: 250px;
+}
+.error-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error-text {
+  color: white;
+}
+.not-found-text {
+  color: white;
+  margin-left: 50px;
+}
+.not-found-image {
+  width: 150px;
+  height: 200px;
+  margin-left: 50px;
+}
