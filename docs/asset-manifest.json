@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.6c2bfbb7.chunk.css",
+    "main.js": "./static/js/main.d69d53c3.chunk.js",
+    "main.js.map": "./static/js/main.d69d53c3.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.787b5d83.js",
+    "runtime-main.js.map": "./static/js/runtime-main.787b5d83.js.map",
+    "static/js/2.69239633.chunk.js": "./static/js/2.69239633.chunk.js",
+    "static/js/2.69239633.chunk.js.map": "./static/js/2.69239633.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.8d969d5287834d7b7df960e31282931b.js": "./precache-manifest.8d969d5287834d7b7df960e31282931b.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.6c2bfbb7.chunk.css.map": "./static/css/main.6c2bfbb7.chunk.css.map",
+    "static/js/2.69239633.chunk.js.LICENSE.txt": "./static/js/2.69239633.chunk.js.LICENSE.txt",
+    "static/media/alien.png": "./static/media/alien.6029eb5b.png",
+    "static/media/error.png": "./static/media/error.eb87b323.png",
+    "static/media/header-logo.png": "./static/media/header-logo.75509f2e.png",
+    "static/media/notfound.png": "./static/media/notfound.0c40dcaf.png",
+    "static/media/skull.png": "./static/media/skull.fd23a89a.png",
+    "static/media/unknown.png": "./static/media/unknown.3091ca82.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.787b5d83.js",
+    "static/js/2.69239633.chunk.js",
+    "static/css/main.6c2bfbb7.chunk.css",
+    "static/js/main.d69d53c3.chunk.js"
+  ]
+}
