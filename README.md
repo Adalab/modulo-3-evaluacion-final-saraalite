@@ -5,7 +5,7 @@ This is a study project that consists on a webpage you can look for characters o
 In the main page you can see the list of characters and if you click on the character cards you will get more details of it.
 
 
-🛸Some features of the webpage:
+🛸 Some features of the webpage:
 -We obtain the characters' info by getting the data from an API
 -It shows characters sorted by alphabetical order
 -It shows an error message when you look for a character that is not in the list
@@ -17,7 +17,9 @@ In the main page you can see the list of characters and if you click on the char
 ✅CSS3 and Grid
 ✅HTML5
 
-👽How to install this project:
+👽 How to install this project:
+
+
 Firstly, you need to install Node.js.
 
 Then, you can clone or download this repo, open your code editor.
