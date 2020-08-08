@@ -20,13 +20,14 @@ function App() {
   }, []);
 
   const getCharacterDetail = (props) => {
+    // Este el el ide que viene en character/id
     const id = parseInt(props.match.params.id);
     // Filtramos para quedarnos solo con el id que queremos
-    const [characterToDetails] = characters.filter(
+    const characterToDetails = characters.filter(
       (character) => character.id === id
     );
-    if (characterToDetails) {
-      return <CharacterDetail character={characterToDetails} />;
+    if (characterToDetails.length === 1) {
+      return <CharacterDetail character={characterToDetails[0]} />;
     } else {
       return (
         <div className="not-found">
