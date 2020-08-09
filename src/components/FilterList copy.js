@@ -1,12 +1,15 @@
 import React from "react";
 import CharacterList from "./CharacterList";
 import FilterByName from "./FilterByName";
+import FilterBySpecies from "./FilterBySpecies";
 import errorimage from "../images/error.png";
 import "./../stylesheets/App.css";
-import FilterByGender from "./FilterByGender";
-import FilterBySpecies from "./FilterBySpecies";
 
 function FilterList(props) {
+  const handleChange = (ev) => {
+    props.setFilterByName(ev.target.value);
+  };
+
   const error = (
     <div className="error-general">
       <p className="error-text">
@@ -20,22 +23,25 @@ function FilterList(props) {
     </div>
   );
 
+  const filteredList = props.characters.filter(
+    (character) =>
+      props.filterByName === "" ||
+      character.name.match(new RegExp(props.filterByName, "i"))
+  );
+
   return (
     <>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-      >
-        <FilterByName handleFilter={props.handleFilter} />
-        <FilterBySpecies
-          handleFilter={props.handleFilter}
-          filterBySpecies={props.filterBySpecies}
+      <form>
+        <input
+          className="input"
+          placeholder="Search a character"
+          type="text"
+          value={props.filterByName}
+          onChange={handleChange}
         />
-        <FilterByGender handleFilter={props.handleFilter} />
       </form>
-      {props.characters.length > 0 ? (
-        <CharacterList characters={props.characters} />
+      {filteredList.length > 0 ? (
+        <CharacterList characters={filteredList} />
       ) : (
         error
       )}

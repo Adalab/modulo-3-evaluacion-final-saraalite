@@ -35,3 +35,16 @@
   height: 200px;
   margin-left: 50px;
 }
+.options-text {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.gender-label {
+  margin-left: 100px;
+  color: white;
+}
+.options-gender {
+  background-color: black;
+  color: greenyellow;
+}
