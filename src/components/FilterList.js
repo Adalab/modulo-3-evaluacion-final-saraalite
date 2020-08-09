@@ -22,7 +22,11 @@ function FilterList(props) {
 
   return (
     <>
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <FilterByName handleFilter={props.handleFilter} />
         <FilterBySpecies
           handleFilter={props.handleFilter}
