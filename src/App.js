@@ -12,6 +12,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
   const [filterByName, setFilterByName] = useState("");
   const [filterByGender, setFilterByGender] = useState("All");
+  const [filterBySpecies, setFilterBySpecies] = useState("All");
 
   //event handlers
   const handleFilter = (data) => {
@@ -20,6 +21,8 @@ function App() {
       setFilterByName(data.value);
     } else if (data.key === "gender") {
       setFilterByGender(data.value);
+    } else if (data.key === "species") {
+      setFilterBySpecies(data.value);
     }
   };
 
@@ -65,6 +68,13 @@ function App() {
       } else {
         return character.gender === filterByGender;
       }
+    })
+    .filter((character) => {
+      if (filterBySpecies === "All") {
+        return true;
+      } else {
+        return character.species === filterBySpecies;
+      }
     });
 
   console.log("Filteres List", filteredList);
@@ -81,6 +91,7 @@ function App() {
               filterByName={filterByName}
               setFilterByName={setFilterByName}
               handleFilter={handleFilter}
+              filterBySpecies={filterBySpecies}
             />
           </Route>
           <Route path="/character/:id" render={getCharacterDetail} />

@@ -5,6 +5,7 @@ import FilterByName from "./FilterByName";
 import errorimage from "../images/error.png";
 import "./../stylesheets/App.css";
 import FilterByGender from "./FilterByGender";
+import FilterBySpecies from "./FilterBySpecies";
 
 function FilterList(props) {
   const error = (
@@ -24,6 +25,10 @@ function FilterList(props) {
     <>
       <form>
         <FilterByName handleFilter={props.handleFilter} />
+        <FilterBySpecies
+          handleFilter={props.handleFilter}
+          filterBySpecies={props.filterBySpecies}
+        />
         <FilterByGender handleFilter={props.handleFilter} />
       </form>
       {props.characters.length > 0 ? (
