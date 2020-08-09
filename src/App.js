@@ -11,6 +11,17 @@ import notfoundimage from "./images/notfound.png";
 function App() {
   const [characters, setCharacters] = useState([]);
   const [filterByName, setFilterByName] = useState("");
+  const [filterByGender, setFilterByGender] = useState("All");
+
+  //event handlers
+  const handleFilter = (data) => {
+    console.log("manejando los filtros", data);
+    if (data.key === "name") {
+      setFilterByName(data.value);
+    } else if (data.key === "gender") {
+      setFilterByGender(data.value);
+    }
+  };
 
   useEffect(() => {
     // Guardamos lo que nos devuelve el api en el estado characters
@@ -42,6 +53,23 @@ function App() {
     }
   };
 
+  const filteredList = characters
+    .filter(
+      (character) =>
+        filterByName === "" ||
+        character.name.match(new RegExp(filterByName, "i"))
+    )
+    .filter((character) => {
+      if (filterByGender === "All") {
+        return true;
+      } else {
+        return character.gender === filterByGender;
+      }
+    });
+
+  console.log("Filteres List", filteredList);
+  console.log("filterByGender", filterByGender);
+
   return (
     <div className="App">
       <Header />
@@ -49,9 +77,10 @@ function App() {
         <Switch>
           <Route exact path="/">
             <FilterList
-              characters={characters}
+              characters={filteredList}
               filterByName={filterByName}
               setFilterByName={setFilterByName}
+              handleFilter={handleFilter}
             />
           </Route>
           <Route path="/character/:id" render={getCharacterDetail} />
