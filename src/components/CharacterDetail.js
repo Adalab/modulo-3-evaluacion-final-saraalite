@@ -66,9 +66,9 @@ function CharacterDetail(props) {
       </div>
       <Link to="/">
         <div className="back-home-container">
-          <a>
+          <div>
             <span className="back-home">Back to home page</span>
-          </a>
+          </div>
         </div>
       </Link>
     </main>

@@ -29,7 +29,11 @@ function FilterList(props) {
 
   return (
     <>
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input
           className="input"
           placeholder="Search a character"
