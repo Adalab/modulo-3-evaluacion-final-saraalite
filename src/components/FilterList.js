@@ -1,7 +1,6 @@
 import React from "react";
 import CharacterList from "./CharacterList";
 import FilterByName from "./FilterByName";
-/* import FilterBySpecies from "./FilterBySpecies"; */
 import errorimage from "../images/error.png";
 import "./../stylesheets/App.css";
 import FilterByGender from "./FilterByGender";
