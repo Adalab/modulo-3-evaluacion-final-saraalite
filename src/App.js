@@ -27,16 +27,13 @@ function App() {
   };
 
   useEffect(() => {
-    // Guardamos lo que nos devuelve el api en el estado characters
     getDataFromApi().then((data) => {
       setCharacters(data);
     });
   }, []);
 
   const getCharacterDetail = (props) => {
-    // Este el el ide que viene en character/id
     const id = parseInt(props.match.params.id);
-    // Filtramos para quedarnos solo con el id que queremos
     const characterToDetails = characters.filter(
       (character) => character.id === id
     );
@@ -76,9 +73,6 @@ function App() {
         return character.species === filterBySpecies;
       }
     });
-
-  console.log("Filteres List", filteredList);
-  console.log("filterByGender", filterByGender);
 
   return (
     <div className="App">
