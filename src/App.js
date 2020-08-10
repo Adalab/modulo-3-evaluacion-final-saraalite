@@ -16,7 +16,6 @@ function App() {
 
   //event handlers
   const handleFilter = (data) => {
-    console.log("manejando los filtros", data);
     if (data.key === "name") {
       setFilterByName(data.value);
     } else if (data.key === "gender") {
