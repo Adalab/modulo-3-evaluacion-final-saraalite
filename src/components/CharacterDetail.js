@@ -20,7 +20,7 @@ function CharacterDetail(props) {
   const changeStatus = () => {
     if (props.character.status === "Alive") {
       return alive;
-    } else if (props.character.species === "Dead") {
+    } else if (props.character.status === "Dead") {
       return dead;
     } else {
       return unknown;
