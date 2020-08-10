@@ -27,12 +27,18 @@ function FilterList(props) {
           e.preventDefault();
         }}
       >
-        <FilterByName handleFilter={props.handleFilter} />
+        <FilterByName
+          handleFilter={props.handleFilter}
+          filterByName={props.filterByName}
+        />
         <FilterBySpecies
           handleFilter={props.handleFilter}
           filterBySpecies={props.filterBySpecies}
         />
-        <FilterByGender handleFilter={props.handleFilter} />
+        <FilterByGender
+          handleFilter={props.handleFilter}
+          FilterByGender={props.filterByGender}
+        />
       </form>
       {props.characters.length > 0 ? (
         <CharacterList characters={props.characters} />

@@ -89,9 +89,10 @@ function App() {
             <FilterList
               characters={filteredList}
               filterByName={filterByName}
+              filterByGender={filterByGender}
+              filterBySpecies={filterBySpecies}
               setFilterByName={setFilterByName}
               handleFilter={handleFilter}
-              filterBySpecies={filterBySpecies}
             />
           </Route>
           <Route path="/character/:id" render={getCharacterDetail} />
