@@ -37,7 +37,7 @@ function FilterList(props) {
         />
         <FilterByGender
           handleFilter={props.handleFilter}
-          FilterByGender={props.filterByGender}
+          filterByGender={props.filterByGender}
         />
       </form>
       {props.characters.length > 0 ? (

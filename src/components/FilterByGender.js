@@ -17,6 +17,7 @@ const FilterByGender = (props) => {
         name="gender"
         className="options-text options-gender"
         id="gender"
+        value={props.filterByGender}
         onChange={handleChange}
       >
         <option value="All" className="options-text options-gender">
