@@ -1,4 +1,4 @@
-⭐ Rick and Morty character finder ⭐
+# ⭐ Rick and Morty character finder ⭐
 
 This is a study project that consists on a webpage where you can look for characters of the Rick and Morty series. 
 
